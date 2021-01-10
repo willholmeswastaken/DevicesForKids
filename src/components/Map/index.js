@@ -88,7 +88,19 @@ const Map = ({
     return () => {
       map.remove()
     }
-  }, [])
+  }, [width,
+    height,
+    zoom,
+    center,
+    bounds,
+    padding,
+    styles,
+    sources,
+    layers,
+    minZoom,
+    maxZoom,
+    markers,
+  mapboxToken])
 
   return (
     <div style={{
