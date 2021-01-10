@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
       <div>
         <div class="text-center flex flex-col p-4 md:text-left md:flex-row md:items-center md:justify-between md:p-12 bg-indigo-100 rounded-md">
           <div class="text-2xl font-semibold">
-            <div class="text-gray-900">Luke is on BBC Radio Leicester at 10:30am 11/02/20201</div>
+            <div class="text-gray-900">Luke is on BBC Radio Leicester at 10:30am 11/02/2021</div>
             <div class="text-purple-500">Tune in to hear what the latest is!</div>
           </div>
         </div>
