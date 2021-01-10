@@ -43,7 +43,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: `${defaultTitle} | ${title}`,
         },
         {
           property: `og:description`,
