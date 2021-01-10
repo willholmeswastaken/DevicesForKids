@@ -22,30 +22,20 @@ const Map = ({
 }) => {
   const { mapboxToken } = siteMetadata
 
-  console.log(mapboxToken);
-
   if (!mapboxToken) {
     console.error(
       'ERROR: Mapbox token is required in gatsby-config.js siteMetadata'
     )
   }
 
-  // this ref holds the map DOM node so that we can pass it into Mapbox GL
   const mapNode = useRef(null)
 
-  // this ref holds the map object once we have instantiated it, so that we
-  // can use it in other hooks
   const mapRef = useRef(null)
 
-  // construct the map within an effect that has no dependencies
-  // this allows us to construct it only once at the time the
-  // component is constructed.
   useEffect(() => {
-    console.log('in effect')
     let mapCenter = center
     let mapZoom = zoom
 
-    // If bounds are available, use these to establish center and zoom when map first loads
     if (bounds && bounds.length === 4) {
       const { center: boundsCenter, zoom: boundsZoom } = getCenterAndZoom(
         mapNode.current,
@@ -56,7 +46,6 @@ const Map = ({
       mapZoom = boundsZoom
     }
 
-    // Token must be set before constructing map
     mapboxgl.accessToken = mapboxToken
 
     const map = new mapboxgl.Map({
@@ -69,18 +58,15 @@ const Map = ({
 
     })
     mapRef.current = map
-    window.map = map // for easier debugging and querying via console
+    window.map = map
 
     map.addControl(new mapboxgl.NavigationControl(), 'top-right')
 
     map.on('load', () => {
-      console.log('map onload')
-      // add sources
       Object.entries(sources).forEach(([id, source]) => {
         map.addSource(id, source)
       })
 
-      // add layers
       layers.forEach(layer => {
         map.addLayer(layer)
       })
@@ -99,20 +85,11 @@ const Map = ({
     }
     map.addControl(new mapboxgl.FullscreenControl());
 
-
-    // hook up map events here, such as click, mouseenter, mouseleave
-    // e.g., map.on('click', (e) => {})
-    // when this component is destroyed, remove the map
-
     return () => {
       map.remove()
     }
   }, [])
 
-  // based on incoming props.  Just beware that you might need to add additional
-  // You can use other `useEffect` hooks to update the state of the map
-  // based on incoming props.  Just beware that you might need to add additional
-  // refs to share objects or state between hooks.
   return (
     <div style={{
       width: width,
@@ -150,7 +127,7 @@ Map.defaultProps = {
   bounds: null,
   maxZoom: 24,
   styles: ['light-v9', 'dark-v9', 'streets-v11'],
-  padding: 0.1, // padding around bounds as a proportion
+  padding: 0.1,
   sources: {},
   layers: [],
   markers: []
