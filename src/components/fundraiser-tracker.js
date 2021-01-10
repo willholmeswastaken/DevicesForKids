@@ -23,6 +23,9 @@ const FundraiserTracker = () => {
         dimensions.width = '95%';
     }
 
+    console.log(windowWidth);
+    console.log(dimensions);
+
     return (
         <>
             <iframe
