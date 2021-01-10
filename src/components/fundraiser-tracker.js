@@ -13,7 +13,7 @@ const FundraiserTracker = () => {
 
     if(windowWidth !== undefined) {
         if (windowWidth < 768) {
-            dimensions.width = '80%';
+            dimensions.width = '100%';
             dimensions.height = '250px';
         }  else if (windowWidth >= 768 && windowWidth < 1024) {
             dimensions.width = '80%';
@@ -24,9 +24,6 @@ const FundraiserTracker = () => {
             dimensions.width = '95%';
         }
     }
-
-    console.log(windowWidth);
-    console.log(dimensions);
 
     return (
         <>
