@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Will Holmes <will@willholmes.dev>",
   "dependencies": {
+    "@loadable/component": "^5.14.1",
     "@mapbox/geo-viewport": "^0.4.1",
     "beautiful-react-hooks": "^0.31.0",
     "gatsby": "^2.26.1",

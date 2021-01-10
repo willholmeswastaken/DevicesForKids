@@ -1,10 +1,13 @@
 import React from "react"
+import loadable from '@loadable/component'
+
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Map from "../components/Map"
-import Carousel from "../components/carousel"
-import FundraiserTracker from "../components/fundraiser-tracker"
+
+const FundraiserTracker = loadable(() => import('../components/fundraiser-tracker'))
+const Carousel = loadable(() => import('../components/carousel'))
 
 const IndexPage = () => (
   <Layout>
@@ -18,8 +21,11 @@ const IndexPage = () => (
         <h1 className="my-4 text-3xl md:text-5xl text-purple-800 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">
           We're on a mission....
         </h1>
-        <p className="leading-normal text-base md:text-2xl mb-6 text-center md:text-left fade-in">
+        <p className="leading-normal text-base md:text-2xl mb-2 text-center md:text-left fade-in">
           We want to make sure no child is left out of learning during this lockdown. Too many children do not have access to a device in order to take part in online learning. Please donate whatever you can!
+        </p>
+        <p className="leading-normal text-sm md:text-xl mb-6 text-center font-semibold md:text-left fade-in">
+          Need school work printing? Don't have a printer? Email us and we will print it for you: schoolwork@knightsbridge-estates.co.uk
         </p>
       {/* Large screen fundraiser element */}
       <div className="flex w-full xl:w-full md:w-1/2 justify-center md:justify-start lg:pb-0 fade-in hidden xl:block">
