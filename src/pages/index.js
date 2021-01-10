@@ -14,17 +14,18 @@ const IndexPage = () => (
 
       <div className="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
         <h1 className="my-4 text-3xl md:text-5xl text-purple-800 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">
-          We are on a mission....
+          We're on a mission....
         </h1>
         <p className="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle">
-          We want to make sure no child is left out of learning during this lockdown. Too many children do not have access to a device to do online learning. Please donate whatever you can!
+          We want to make sure no child is left out of learning during this lockdown. Too many children do not have access to a device in order to take part in online learning. Please donate whatever you can!
         </p>
         <div className="flex w-full justify-center md:justify-start lg:pb-0 fade-in ">
-        <button
-            class="inline-block px-6 py-2 font-medium leading-7 text-center text-white uppercase bounce-top-icons bg-blue-700 rounded-full shadow ripple hover:shadow-lg hover:bg-blue-800 focus:outline-none"
+          <a
+            href="https://www.gofundme.com/f/help-keep-local-leicestershire-children-learning"
+            className="inline-block px-8 py-4 text-lg leading-7 text-center font-bold text-white uppercase bounce-top-icons bg-blue-700 rounded-full shadow ripple hover:shadow-lg hover:bg-blue-800 focus:outline-none"
           >
-            Donate
-          </button>
+            Get Involved
+          </a>
           {/* <iframe src="https://www.gofundme.com/f/help-keep-local-leicestershire-children-learning/widget/small/" frameborder="0" width="50%" height="50px" scrolling="no"></iframe> */}
         </div>
 
