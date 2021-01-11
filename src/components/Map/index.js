@@ -86,7 +86,7 @@ const Map = ({
           .setPopup(new mapboxgl.Popup({ offset: 25 }).setHTML(
             `<div>
               <h3>${marker.name}</h3>
-              <p class="font-semibold text-${isDelivered ? 'green' : 'red'}-500">${marker.status}</p>
+              <p style="${isDelivered ? 'green' : 'red'}" class="font-semibold">${marker.status}</p>
              </div>`
           ))
           .addTo(map);
