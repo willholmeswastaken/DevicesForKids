@@ -1,0 +1,30 @@
+[
+    {
+        "long": -1.244940,
+        "lat": 52.554310,
+        "name": "Avenue Primary School",
+        "status": "Delivered",
+        "tabletCount": ""
+    },
+    {
+        "long": -1.06107,
+        "lat": 52.60313,
+        "name": "Manor High School",
+        "status": "Delivered",
+        "tabletCount": ""
+    },
+    {
+        "long": -1.12937,
+        "lat": 52.58809,
+        "name": "Fairfield Primary School",
+        "status": "Delivered",
+        "tabletCount": ""
+    },
+    {
+        "long": -1.04998,
+        "lat": 52.53855,
+        "name": "Fleckney Primary School",
+        "status": "Delivered",
+        "tabletCount": ""
+    }
+]
