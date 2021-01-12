@@ -5,6 +5,7 @@ import loadable from '@loadable/component'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Map from "../components/Map"
+import schools from '../data/schools.json'
 
 const FundraiserTracker = loadable(() => import('../components/fundraiser-tracker'))
 const Carousel = loadable(() => import('../components/carousel'))
@@ -60,12 +61,7 @@ const IndexPage = () => (
         height="350px"
         center={[-1.133333, 52.6333331]}
         zoom={9.5}
-        markers={[
-          { long: -1.244940, lat: 52.554310, name: 'Avenue Primary School' },
-          { long: -1.06107, lat: 52.60313, name: 'Manor High School' },
-          { long: -1.12937, lat: 52.58809, name: 'Fairfield Primary School' },
-          { long: -1.04998, lat: 52.53855, name: 'Fleckney Primary School' },
-        ]} />
+        markers={schools} />
     </div>
   </Layout>
 )

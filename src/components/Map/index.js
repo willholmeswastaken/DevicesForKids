@@ -75,10 +75,20 @@ const Map = ({
     if (markers.length > 0) {
       for (let i = 0; i < markers.length; i++) {
         const marker = markers[i]
-        new mapboxgl.Marker()
+        const el = document.createElement('img')
+        const isDelivered = marker.status.toLowerCase() === 'delivered'
+        el.src = isDelivered
+        ? "https://img.icons8.com/ultraviolet/40/000000/marker.png"
+        : "https://img.icons8.com/office/40/000000/marker.png";
+
+        new mapboxgl.Marker(el)
           .setLngLat([marker.long, marker.lat])
           .setPopup(new mapboxgl.Popup({ offset: 25 }).setHTML(
-            `<p>${marker.name}</p>`
+            `<div>
+              <h3>${marker.name}</h3>
+              <p class="font-semibold">Devices Required: ${marker.tabletCount} </p>
+              <p style="color:${isDelivered ? 'green' : 'red'};" class="font-semibold">${marker.status}</p>
+             </div>`
           ))
           .addTo(map);
       }
