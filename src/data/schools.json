@@ -4,27 +4,146 @@
         "lat": 52.554310,
         "name": "Avenue Primary School",
         "status": "Delivered",
-        "tabletCount": ""
+        "tabletCount": "30"
     },
     {
         "long": -1.06107,
         "lat": 52.60313,
         "name": "Manor High School",
         "status": "Delivered",
-        "tabletCount": ""
+        "tabletCount": "15"
     },
     {
         "long": -1.12937,
         "lat": 52.58809,
         "name": "Fairfield Primary School",
-        "status": "Not Delivered",
-        "tabletCount": ""
+        "status": "Delivered",
+        "tabletCount": "20"
     },
     {
         "long": -1.04998,
         "lat": 52.53855,
         "name": "Fleckney Primary School",
         "status": "Delivered",
-        "tabletCount": ""
+        "tabletCount": "40"
+    },
+    {
+        "long": -1.13679,
+        "lat": 52.57905,
+        "name": "Parkland Primary School",
+        "status": "Delivered",
+        "tabletCount": "10"
+    },
+    {
+        "long": -1.11851,
+        "lat": 52.63020,
+        "name": "Sparkenhoe Primary School",
+        "status": "Delivered",
+        "tabletCount": "10"
+    },
+    {
+        "long": -1.09406,
+        "lat": 52.52770,
+        "name": "Arnesby Primary School",
+        "status": "Not Delivered",
+        "tabletCount": "5"
+    },
+    {
+        "long": -1.09688,
+        "lat": 52.64464,
+        "name": "Merrydale Infant School",
+        "status": "Delivered",
+        "tabletCount": "10"
+    },
+    {
+        "long": -1.15948,
+        "lat": 52.64172,
+        "name": "Inglehurst Junior School",
+        "status": "Not Delivered",
+        "tabletCount": "10"
+    },
+    {
+        "long": -1.10907,
+        "lat": 52.58536,
+        "name": "All Saints C of E",
+        "status": "Not Delivered",
+        "tabletCount": "10"
+    },
+    {
+        "long": -1.14511,
+        "lat": 52.66921,
+        "name": "Mowmcare Hill Primary School",
+        "status": "Delivered",
+        "tabletCount": "10"
+    },
+    {
+        "long": -1.08945,
+        "lat": 52.59519,
+        "name": "Langmoor Primary School",
+        "status": "Delivered",
+        "tabletCount": "10"
+    },
+    {
+        "long": -1.09767,
+        "lat": 52.58590,
+        "name": "Meadows Community Primary School",
+        "status": "Not Delivered",
+        "tabletCount": "20"
+    },
+    {
+        "long": -1.10479,
+        "lat": 52.65682,
+        "name": "Wyvern Primary School",
+        "status": "Not Delivered",
+        "tabletCount": "10"
+    },
+    {
+        "long": -1.16199,
+        "lat": 52.62477,
+        "name": "Imperial Avenue Infant School",
+        "status": "Not Delivered",
+        "tabletCount": "10"
+    },
+    {
+        "long": -1.16710,
+        "lat": 52.62054,
+        "name": "Folville Junior School",
+        "status": "Not Delivered",
+        "tabletCount": "10"
+    },
+    {
+        "long": -1.10999,
+        "lat": 52.63898,
+        "name": "Sacred Heart School",
+        "status": "Not Delivered",
+        "tabletCount": "10"
+    },
+    {
+        "long": -1.11104,
+        "lat": 52.61168,
+        "name": "St Thomas More Catholic Voluntary Academy",
+        "status": "Not Delivered",
+        "tabletCount": "10"
+    },
+    {
+        "long": -1.15021,
+        "lat": 52.60699,
+        "name": "Granby Primary School",
+        "status": "Not Delivered",
+        "tabletCount": "10"
+    },
+    {
+        "long": -1.22090,
+        "lat": 52.52988,
+        "name": "Old Mill Primary School",
+        "status": "Not Delivered",
+        "tabletCount": "10"
+    },
+    {
+        "long": -1.11247,
+        "lat": 52.60310,
+        "name": "Overdale Infant School",
+        "status": "Delivered",
+        "tabletCount": "40"
     }
 ]
